@@ -1,0 +1,33 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Id</label>
+      <input [(ngModel)]="movie.mov_id" name="id" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input [(ngModel)]="movie.mov_title" type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Year</label>
+      <input [(ngModel)]="movie.mov_year" type="text" name="year" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Time</label>
+      <input [(ngModel)]="movie.mov_time" type="text" name="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Lang</label>
+      <input [(ngModel)]="movie.mov_lang" name="lang" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Date Movie</label>
+      <input [(ngModel)]="movie.mov_dt_rel" name="rel" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Country</label>
+      <input [(ngModel)]="movie.mov_rel_country" name="country" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+    
+    <button (click)="addMovie()" type="submit" class="btn btn-primary">Submit</button>
+  </form>
